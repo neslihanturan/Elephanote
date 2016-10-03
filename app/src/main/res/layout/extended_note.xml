@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@color/colorGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:background="@color/colorOrangePink"
+        android:weightSum="5">
+        <TextView
+            android:id="@+id/e_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/date_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.3"
+        android:editable="true"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/btnActivity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:textColor="@android:color/white"
+            />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_button"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

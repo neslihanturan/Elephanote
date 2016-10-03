@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="8"
+    android:background="@color/colorOrangePink"
+    >
+
+    <ImageView
+        android:id="@+id/simge"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/colorOrangePink"
+
+        />
+
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="4dp"
+        android:background="@color/colorGray"
+        />
+
+    <TextView
+        android:id="@+id/shortage"
+        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:textSize="16dp"
+        android:gravity="left|center"
+        />
+
+
+
+    <TextView
+        android:id="@+id/dateinfo"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorOrangePink"
+        android:textSize="11dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:background="@color/colorOrangePink"/>
+
+
+
+</LinearLayout>

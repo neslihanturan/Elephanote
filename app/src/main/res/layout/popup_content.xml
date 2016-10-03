@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popupLayout"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/colorBabyPink"
+    android:orientation="vertical"
+    android:weightSum="4.5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <TextView
+            android:id="@+id/text_shortage"
+            android:layout_width="0dp"
+            android:layout_weight="2.02"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:background="@color/colorOrangePink"
+            android:textAlignment="center"
+            />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="3dp"
+            />
+
+        <TextView
+            android:id="@+id/text_number"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:background="@color/colorOrangePink"
+            android:text="jnkbmn"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_weight="2"
+        android:weightSum="3"
+        android:background="@color/colorGray"
+        >
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"
+
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_todo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:checked="true"
+                android:text="to do list"
+                android:textSize="11dip"
+                android:background="@color/colorOrangePink"
+                android:button="@drawable/custom_radiobutton_drawable"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+
+
+
+
+                />
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="4dp"
+                />
+            <RadioButton android:id="@+id/radio_address"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@color/colorOrangePink"
+                android:text="adresses"
+                android:textSize="11dip"
+                android:button="@drawable/custom_radiobutton_drawable"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                />
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="4dp"
+                />
+            <RadioButton android:id="@+id/radio_quotes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@color/colorOrangePink"
+                android:text="quotes"
+                android:textSize="11dip"
+                android:button="@drawable/custom_radiobutton_drawable"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                />
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+
+        >
+
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/my_button"
+            android:text="delete"
+            android:textSize="13dp"
+            android:textColor="@android:color/white"
+            />
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="6dp"
+            android:background="@color/colorOrangePink"
+            />
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/my_button"
+            android:text="save"
+            android:textSize="13dp"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
